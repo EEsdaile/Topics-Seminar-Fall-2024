@@ -21,7 +21,7 @@ I am attempting to follow the methods from the ancient horse papers.
 ```
 
 Paper: https://www.nature.com/articles/s41586-024-07597-5#MOESM1 \
-Data was downloaded from https://www.ebi.ac.uk/ena/browser/view/PRJEB44430?show=analyses using the providing script to download all files.  \
+Data was downloaded from https://www.ebi.ac.uk/ena/browser/view/PRJEB44430?show=analyses using the providing script to download all files.  
 
 EquCab3 downloaded with NCBI Datasets \
 In conda environment 
