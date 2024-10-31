@@ -5,7 +5,7 @@ The goal is to create a VCF from publicly available BAMs from ancient and modern
 From this VCF I will create a structure plot and a PCA by breed to see if the ancient horses cluster as expected.\
 I am attempting to follow the methods from the ancient horse papers.\
 
- To set my command line as I like it \
+ To set my command line as I like it 
  ` bash  \
  PS1='\u:\w\$ '   \
  `
