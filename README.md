@@ -1,16 +1,16 @@
 # Topics Seminar Fall 2024
 ## This is my final project for the MIP Topics class
 
-The goal is to create a VCF from publicly available BAMs from ancient and modern horses.    
-From this VCF I will create a structure plot and a PCA by breed to see if the ancient horses cluster as expected.    
+The goal is to create a VCF from publicly available BAMs from ancient and modern horses.\
+From this VCF I will create a structure plot and a PCA by breed to see if the ancient horses cluster as expected.\
 I am attempting to follow the methods from the ancient horse papers.    
 
  To set my command line as I like it   
- ` bash
+ ` bash  
  PS1='\u:\w\$ '   
  `
  
- To set sq to print my squeue 
+ To set sq to print my squeue    
  ` bash   
  function sq() {   
     local user=${1:-$(whoami)}   
