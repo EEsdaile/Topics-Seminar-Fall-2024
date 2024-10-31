@@ -33,6 +33,12 @@ conda install -c conda-forge ncbi-datasets-cli
 datasets download genome accession GCF_002863925.1 --include gff3,rna,cds,protein,genome,seq-report   
 ```
 
+index fasta with samtools
+``` bash
+module load samtools
+samtools faidx GCF_002863925.1_EquCab3.0_genomic.fna
+```
+
 ANGSD to call SNPs : https://github.com/ANGSD/angsd   \
 -SNP_pval 0 was used per the original publication   \
 
