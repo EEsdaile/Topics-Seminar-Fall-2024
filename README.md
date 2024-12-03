@@ -60,7 +60,7 @@ module load samtools #this enables samtools to be used on the cluster
 samtools faidx GCF_002863925.1_EquCab3.0_genomic.fna  #actual command to index the fasta (in this case, an "fna" file)
 ```
 
-### <ins>Variant Calling</ins>
+### <ins>Variant Calling</ins> (make_vcf_glf.sh)
 ANGSD to was used call SNPs : https://github.com/ANGSD/angsd \
 angsd version: 0.941-22-gc877e7f (htslib: 1.21-14-gcf0e7568) build(Oct 30 2024 12:15:14)
 
