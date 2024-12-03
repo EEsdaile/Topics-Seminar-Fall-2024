@@ -1,12 +1,12 @@
 # Topics Seminar Fall 2024
-## This is my final project for the MIP Topics class
+### This is my final project for the MIP Topics class
 
 The goal is to create a VCF from publicly available BAMs from ancient and modern horses.\
 I am attempting to follow the methods from Librado et al. 2024.
 
 Librado, P., Tressières, G., Chauvey, L. et al. Widespread horse-based mobility arose around 2200 bce in Eurasia. Nature 631, 819–825 (2024). https://doi.org/10.1038/s41586-024-07597-5
 
-### Set up:
+### <ins>Set up:</ins>
  To set my command line as I like it 
  ``` bash  
  PS1='\u:\w\$ '  
@@ -22,7 +22,7 @@ To set sq as a shortcut to print my squeue
 }   
 ```
 
-### Data Download
+### <ins>Data Download</ins>
 Data was downloaded from the European Nucleotide Archive (ENA) under project number PRJEB44430 (https://www.ebi.ac.uk/ena/browser/view/PRJEB44430?show=analyses) using the ENA generated script to download all files.
 
 ``` bash
@@ -45,7 +45,7 @@ module load samtools
 samtools faidx GCF_002863925.1_EquCab3.0_genomic.fna
 ```
 
-### Variant Calling
+### <ins>Variant Calling</ins>
 ANGSD to was used call SNPs : https://github.com/ANGSD/angsd   \
 ANGSD was used because the quality and coverage of sequencing data from ancient samples, hundreds to thousands of years old, is very poor compared to modern, high quality samples. As such, ANGSD calculates genotypic likelihood and imputation to identify variants across a genome. This does complicate future analysis because it does not produce vcf files in the typical format (0/0, 0/1, 1/1, ./., etc) and instead calculates the likelihood that a sample has each of the variants. However, there are some custom tools to still conduct common analyses using ancient samples. 
 
@@ -92,7 +92,7 @@ The script was run using slurm
 -out is the prefix for the generated output files. \
 
 
-### Output
+### <ins>Output</ins>
 The output file was unzipped to view the contents
 ``` bash
 gunzip -k output2.bcf.beagle.gz
@@ -103,7 +103,7 @@ This is the output of the head of the file.
 
 ---------------------------------------------------------------------------------
 
-### <u> What next? </u>
+### <ins> What next? </ins>
 The beagle output file can be fed into PCAngsd to generate a PCA to evaluate how ancience and modern horse and other equid samples cluster together. For example, I would expect the modern european horses to cluster with the ancient european horses, and the ancient eastern asian horses to cluster with modern eastern asian horses. Additional analyses could be done to evaluate gene flow. 
 https://www.popgen.dk/software/index.php/PCAngsd
 
