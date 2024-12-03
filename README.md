@@ -103,7 +103,7 @@ This is the output of the head of the file.
 
 ---------------------------------------------------------------------------------
 
-### What next? \
+### <u> What next? </u>
 The beagle output file can be fed into PCAngsd to generate a PCA to evaluate how ancience and modern horse and other equid samples cluster together. For example, I would expect the modern european horses to cluster with the ancient european horses, and the ancient eastern asian horses to cluster with modern eastern asian horses. Additional analyses could be done to evaluate gene flow. 
 https://www.popgen.dk/software/index.php/PCAngsd
 
