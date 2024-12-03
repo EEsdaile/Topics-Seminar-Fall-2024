@@ -44,8 +44,11 @@ samtools faidx GCF_002863925.1_EquCab3.0_genomic.fna
 ```
 
 ANGSD to was used call SNPs : https://github.com/ANGSD/angsd   \
--SNP_pval 0 was used per the original publication but was removed from the code due to it \
-causing the script to fail. I used an updated version of ANGSD, which is not the same version \
+ANGSD was used because the quality and coverage of sequencing data from ancient samples, hundreds to thousands of years old, is very poor compared to modern, high quality samples. As such, ANGSD calculates genotypic likelihood and imputation to identify variants across a genome. This does complicate future analysis because it does not produce vcf files in the typical format (0/0, 0/1, 1/1, ./., etc) and instead calculates the likelihood that a sample has each of the variants. However, there are some custom tools to still conduct common analyses using ancient samples. 
+
+
+-SNP_pval 0 was used by Librado et al. 2024, but was removed from the code due to it 
+causing the script to fail. I used an updated version of ANGSD, which is not the same version 
 used by Librado et al. 2024. \
 The script was run using slurm
 ``` bash
@@ -85,4 +88,7 @@ The script was run using slurm
 -ref and -fai are the reference genome and index file for the reference genome \
 -out is the prefix for the generated output files. \
 
-
+The output file was unzipped to view the contents
+``` bash
+gunzip -k output2.bcf.beagle.gz
+```
