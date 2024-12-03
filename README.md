@@ -90,16 +90,17 @@ The script was run using slurm
 
 ---------------------------------------------------------------------------------
 
-The output file was unzipped to view the contents
+#### The output file was unzipped to view the contents
 ``` bash
 gunzip -k output2.bcf.beagle.gz
 head -n 20 output2.bcf.beagle
 ```
+#### This is the output of the head of the file. 
 ![image](https://github.com/user-attachments/assets/1543fabe-f80e-4c5c-aa42-9e94c65a80c2)
 
 ---------------------------------------------------------------------------------
 
-What next? \
+#### What next? \
 The beagle output file can be fed into PCAngsd to generate a PCA to evaluate how ancience and modern horse and other equid samples cluster together. For example, I would expect the modern european horses to cluster with the ancient european horses, and the ancient eastern asian horses to cluster with modern eastern asian horses. Additional analyses could be done to evaluate gene flow. 
 https://www.popgen.dk/software/index.php/PCAngsd
 
