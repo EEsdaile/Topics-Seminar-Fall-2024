@@ -70,19 +70,19 @@ The script was run using slurm
  -fai /projects/c829993361@colostate.edu/EquCab3/ncbi_dataset/data/GCF_002863925.1/GCF_002863925.1_EquCab3.0_genomic_Chr_names.fna.fai
 ```
 
--b is my file of bams to use (4 horses)
--dobcf created a bcf file (binary vcf file)
--gl 1 called genotype likelihoods with model #1
--doGlf 2 creats a Beagle output file (calls haplotypes)
--dopost 1 calculates a posterior probability using the frequency as prior
--domajorminor 1 infer the major and minor alleles using maximum likelihood.
--domaf 1 calculates fixed major and minor allele frequencies an outputs a *.maf.gz file
--minQ 30 uses a minimum base quality (phred score) of 30
--minmapQ 25 uses a minimum mapping quality of 25
--uniqueonly 1 remove reads with multiple best hits
--remove_bads 1 removed reads with a flag above 255
--C 50 adjusts the mapQ for excessive mismatches
--ref and -fai are the reference genome and index file for the reference genome
--out is the prefix for the generated output files. 
+-b is my file of bams to use (4 horses) \
+-dobcf created a bcf file (binary vcf file) \
+-gl 1 called genotype likelihoods with model #1 \
+-doGlf 2 creats a Beagle output file (calls haplotypes) \
+-dopost 1 calculates a posterior probability using the frequency as prior \
+-domajorminor 1 infer the major and minor alleles using maximum likelihood. \
+-domaf 1 calculates fixed major and minor allele frequencies an outputs a *.maf.gz file \
+-minQ 30 uses a minimum base quality (phred score) of 30 \
+-minmapQ 25 uses a minimum mapping quality of 25 \
+-uniqueonly 1 remove reads with multiple best hits \
+-remove_bads 1 removed reads with a flag above 255 \
+-C 50 adjusts the mapQ for excessive mismatches \
+-ref and -fai are the reference genome and index file for the reference genome \
+-out is the prefix for the generated output files. \
 
 
