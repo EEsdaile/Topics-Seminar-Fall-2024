@@ -47,6 +47,14 @@ samtools faidx GCF_002863925.1_EquCab3.0_genomic.fna
 
 ### <ins>Variant Calling</ins>
 ANGSD to was used call SNPs : https://github.com/ANGSD/angsd   \
+``` bash
+angsd --version
+
+        -> angsd version: 0.941-22-gc877e7f (htslib: 1.21-14-gcf0e7568) build(Oct 30 2024 12:15:14)
+        -> Please use the website "http://www.popgen.dk/angsd" as reference
+```
+Note: The github page has state that it is current and the popgen page is outdated.
+
 ANGSD was used because the quality and coverage of sequencing data from ancient samples, hundreds to thousands of years old, is very poor compared to modern, high quality samples. As such, ANGSD calculates genotypic likelihood and imputation to identify variants across a genome. This does complicate future analysis because it does not produce vcf files in the typical format (0/0, 0/1, 1/1, ./., etc) and instead calculates the likelihood that a sample has each of the variants. However, there are some custom tools to still conduct common analyses using ancient samples. 
 
 
@@ -107,5 +115,23 @@ This is the output of the head of the file.
 The beagle output file can be fed into PCAngsd to generate a PCA to evaluate how ancience and modern horse and other equid samples cluster together. For example, I would expect the modern european horses to cluster with the ancient european horses, and the ancient eastern asian horses to cluster with modern eastern asian horses. Additional analyses could be done to evaluate gene flow. 
 https://www.popgen.dk/software/index.php/PCAngsd
 
+This would be a starting place to run the PCA:
+``` bash
+#!/bin/bash
+
+#SBATCH --partition=amilan
+#SBATCH --nodes=2
+#SBATCH --output=pcangsd
+#SBATCH --time=24:00:00
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=e.s.esdaile@colostate.edu
+
+
+pcangsd -beagle output2.bcf.beagle.gz -e 20 -t 64 -o /scratch/alpine/c829993361@colostate.edu/ancient_horses/PCA_output_20241125
+```
+
+### <ins>Reproducibility</ins>
+
+### <ins> Peer Feedback </ins>
 
 
