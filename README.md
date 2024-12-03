@@ -35,6 +35,9 @@ GNU Wget 1.19.5 built on linux-gnu.
 ``` bash
 wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/analysis/ERZ303/{sample_ID}/{file_name}
 ```
+See related files in "download_bams" directory here on GitHub
+
+
 \
 Anaconda was used to create a conda environment with NCBI Datasets to enable downloading of the reference genome (EquCab3). 
 
