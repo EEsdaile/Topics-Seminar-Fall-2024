@@ -93,7 +93,9 @@ The script was run using slurm
 The output file was unzipped to view the contents
 ``` bash
 gunzip -k output2.bcf.beagle.gz
+head -n 20 output2.bcf.beagle
 ```
+![image](https://github.com/user-attachments/assets/1543fabe-f80e-4c5c-aa42-9e94c65a80c2)
 
 ---------------------------------------------------------------------------------
 
