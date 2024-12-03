@@ -1,0 +1,4 @@
+/scratch/alpine/c829993361@colostate.edu/ancient_horses/bams/Rid2_CGG-1-018469_Est_m700.Bowtie2.EquCab3.pmds1.r.t.m.s.q25.bam
+/scratch/alpine/c829993361@colostate.edu/ancient_horses/bams/KB217_AMIS-1-01626_Rus_PAL.Bowtie2.EquCab3.pmds1.r.t.m.s.q25.bam
+/scratch/alpine/c829993361@colostate.edu/ancient_horses/bams/Mon2017x176_CGG-1-0219435_Mon_m939.Bowtie2.EquCab3.pmds1.r.t.m.s.q25.bam
+/scratch/alpine/c829993361@colostate.edu/ancient_horses/bams/CD2017_AMIS-1-00096_Tur_m4532.Bowtie2.EquCab3.pmds1.r.t.m.s.q25.bam
