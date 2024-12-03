@@ -1,5 +1,5 @@
 # Topics Seminar Fall 2024
-# https://github.com/EEsdaile/Topics-Seminar-Fall-2024
+## https://github.com/EEsdaile/Topics-Seminar-Fall-2024
 ### This is my final project for the MIP Topics class
 
 The goal is to create a VCF from publicly available BAMs from ancient and modern horses.\
